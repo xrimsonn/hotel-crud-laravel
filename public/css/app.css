@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap");
+
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+li > strong {
+  font-size: xx-large;
+}
+
+li > a {
+  width: 7em;
+}
+
+article {
+  margin: 0;
+}
+
+#title {
+  color: #FFF !important;
+}
+
+#title:hover {
+  cursor: pointer;
+}
+
+/* * Pico customization */
+/* Orange Light scheme (Default) */
+/* Can be forced with data-theme="light" */
+[data-theme="light"],
+:root:not([data-theme="dark"]) {
+  --primary: #d89c1b;
+  --primary-hover: #e9a91e;
+  --primary-focus: rgba(216, 159, 27, 0.25);
+  --primary-inverse: #FFF;
+}
+
+/* Orange Dark scheme (Auto) */
+/* Automatically enabled if user has Dark mode enabled */
+@media only screen and (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    --primary: #d89c1b;
+    --primary-hover: #e9a91e;
+    --primary-focus: rgba(216, 159, 27, 0.25);
+    --primary-inverse: #FFF;
+  }
+}
+
+/* Orange Dark scheme (Forced) */
+/* Enabled if forced with data-theme="dark" */
+[data-theme="dark"] {
+  --primary: #d89c1b;
+  --primary-hover: #e9a91e;
+  --primary-focus: rgba(216, 159, 27, 0.25);
+  --primary-inverse: #FFF;
+}
+
+/* Orange (Common styles) */
+:root {
+  --form-element-active-border-color: var(--primary);
+  --form-element-focus-color: var(--primary-focus);
+  --switch-color: var(--primary-inverse);
+  --switch-checked-background-color: var(--primary);
+}
