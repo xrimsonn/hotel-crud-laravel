@@ -19,7 +19,7 @@ return new class extends Migration
       $table->date('check_out');
       $table->boolean('room_type');
       $table->integer('cost');
-      $table->file('voucher');
+      $table->string('voucher');
       $table->timestamps();
     });
   }
