@@ -14,7 +14,7 @@
     @enderror
 
     <label for="people_number">Number of people:</label>
-    <input type="number" name="people_number" id="people_number" value="{{ old('people_number') }}">
+    <input type="number" min="0" name="people_number" id="people_number" value="{{ old('people_number') }}">
     @error('people_number')
       <mark>{{ $message }}</mark>
     @enderror
@@ -41,7 +41,7 @@
     @enderror
 
     <label for="cost">Costo total:</label>
-    <input type="number" name="cost" id="cost" value="{{ old('cost') }}">
+    <input type="number" min="0" name="cost" id="cost" value="{{ old('cost') }}">
     @error('cost')
       <mark>{{ $message }}</mark>
     @enderror

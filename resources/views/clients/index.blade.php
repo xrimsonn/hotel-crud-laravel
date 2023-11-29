@@ -5,18 +5,18 @@
 @section('content')
   <hgroup>
     <h1>Lista de Clientes</h1>
-    <p>Ordenados por ID</p>
+    <p>Todos los clientes del hotel listados</p>
   </hgroup>
   @if (count($clients) > 0)
 
-    @foreach ($clients as $client)
+    @foreach ($clients as $c)
       <hgroup>
         <h3>
-          <a href="{{ route('clients.show', ['client' => $client['id']]) }}">
-            {{ $client['name'] }}
+          <a href="{{ route('clients.show', ['client' => $c['id']]) }}">
+            {{ $c['name'] }}
           </a>
         </h3>
-        <p>{{ $client['check_in'] }} hasta el {{ $client['check_out'] }}</p>
+        <p>Registrado: {{ $c['check_in'] }}</p>
       </hgroup>
     @endforeach
   @else
