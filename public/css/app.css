@@ -12,6 +12,16 @@ li > a {
   width: 7em;
 }
 
+h3 > a {
+  color: #FFF;
+}
+
+h3 > a:hover,
+h3 > a:focus {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
 article {
   margin: 0;
 }
