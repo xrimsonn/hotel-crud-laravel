@@ -26,6 +26,27 @@ article {
   margin: 0;
 }
 
+footer {
+  text-align: center;
+}
+
+article > img {
+  display: block;
+  margin: auto;
+  width: 60%;
+  border-radius: 2px;
+  transition: 150ms;
+}
+
+article > img:hover {
+  display: block;
+  margin: auto;
+  width: 80%;
+  transition: 150ms;
+}
+
+
+
 #title {
   color: #FFF !important;
 }
