@@ -1,66 +1,71 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Hotel Management System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Este proyecto es un Sistema de Gestión Hotelera desarrollado en Laravel, diseñado para facilitar la administración de empleados, personal y órdenes del restaurante en un hotel. Además, el sistema utiliza la biblioteca [PicoCSS](https://github.com/picocss/pico) para estilos minimalistas y una experiencia de usuario limpia.
 
-## About Laravel
+## Características principales
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+1. **CRUD de Empleados**: Gestiona fácilmente la información de los empleados, incluyendo detalles como nombre, posición, contacto, etc.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+2. **CRUD de Personal del Hotel**: Administra el personal del hotel, permitiendo la adición, edición y eliminación de detalles relevantes.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+3. **CRUD de Órdenes del Restaurante**: Facilita la gestión de órdenes de comida en el restaurante del hotel, con opciones para agregar, editar y eliminar pedidos.
 
-## Learning Laravel
+4. **Integración con PicoCSS**: La interfaz de usuario utiliza la biblioteca PicoCSS para estilos minimalistas y una experiencia visual agradable.
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+5. **Integración con FontAwesome**: Tambien se incluyen iconos de la libreria de FontAwesome para añadir detalles visuales.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Requisitos del sistema
 
-## Laravel Sponsors
+Asegúrate de que tu entorno cumple con los siguientes requisitos antes de instalar y ejecutar el proyecto:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+- PHP >= 8.2
+- Composer
+- Node.js y npm
+- Base de datos MySQL
 
-### Premium Partners
+## Instalación
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+1. Clona el repositorio:
 
-## Contributing
+    ```bash
+    git clone https://github.com/tu-usuario/hotel-management-system.git
+    ```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+2. Instala las dependencias de PHP con Composer:
 
-## Code of Conduct
+    ```bash
+    composer install
+    ```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+3. Copia el archivo de configuración `.env`:
 
-## Security Vulnerabilities
+    ```bash
+    cp .env.example .env
+    ```
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+4. Configura tu entorno en el archivo `.env`, incluyendo la configuración de la base de datos (solo se necesita una base de datos vacia para ejecutar las migraciones).
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+6. Ejecuta las migraciones y los seeders para configurar la base de datos:
+
+    ```bash
+    php artisan migrate --seed
+    ```
+
+10. Inicia el servidor de desarrollo:
+
+    ```bash
+    php artisan serve
+    ```
+
+11. Abre [http://localhost:8000](http://localhost:8000).
+
+¡El Hotel Management System ahora debería estar funcionando en tu entorno local!
+
+
+## Licencia
+
+Este proyecto está bajo la licencia [MIT](LICENSE).
+
+---
