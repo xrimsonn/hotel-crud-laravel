@@ -15,12 +15,12 @@
   <main class="container">
     <nav>
       <ul>
-        <li><strong><a href="{{ url('/') }}" class="contrast">DoubleTree by Hilton</a></strong></li>
+        <li><strong><a href="{{ route('home.index') }}" class="contrast">DoubleTree by Hilton</a></strong></li>
       </ul>
       <ul>
-        <li><a href="{{ url('/clients') }}" role="button" class="contrast">Clientes</a></li>
-        <li><a href="{{ url('/restaurant') }}" role="button" class="contrast">Restaurante</a></li>
-        <li><a href="{{ url('/staff') }}" role="button" class="contrast">Personal</a></li>
+        <li><a href="{{ route('clients.index') }}" role="button" class="contrast">Clientes</a></li>
+        <li><a href="{{ route('clients.index') }}" role="button" class="contrast">Restaurante</a></li>
+        <li><a href="{{ route('clients.index') }}" role="button" class="contrast">Personal</a></li>
       </ul>
     </nav>
     <article>
